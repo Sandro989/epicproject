@@ -1,0 +1,33 @@
+package gagan.brar;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author 041502930
+ */
+public class GaganBrar {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+          // 2.54cm is 1 inch
+       Scanner cm = new Scanner(System.in); 
+       System.out.println("Enter The Centimeters:");
+       double centimeters = cm.nextDouble(); 
+       double inches = Math.round( (centimeters / 2.54) * 100 ) / 100.0; 
+       System.out.println(inches +"Inches");
+               
+
+       // inch to cm
+       Scanner inch1 = new Scanner(System.in);
+       System.out.println("Enter The Inch");
+       double inch_to_cm = inch1.nextDouble();
+
+       double cm1; cm1 = (inch_to_cm*2.54);
+       System.out.println(inch_to_cm);
+
+    }
+    
+}
